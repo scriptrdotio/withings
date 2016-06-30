@@ -17,8 +17,8 @@ execute=authenticated
  */
 
 var http = require("http");
-var config = require("../config");
-var oauthManagerModule = require("./oauth");
+var config = require("../config.js");
+var oauthManagerModule = require("./oauth.js");
 
 var oauthManager = new oauthManagerModule.OAuthManager();
 var requestId = oauthManager.generateNonce();

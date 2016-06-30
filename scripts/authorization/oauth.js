@@ -4,10 +4,10 @@ write=nobody
 execute=authenticated 
   **/ 
  
- var cryptomd5 = require("../lib/md5_min");
-var encodingLib = require("../lib/enc_base64_min");
-var cryptohmacsha1 = require("../lib/hmac_sha1_min");
-var config = require("../config");
+ var cryptomd5 = require("../lib/md5_min.js");
+var encodingLib = require("../lib/enc_base64_min.js");
+var cryptohmacsha1 = require("../lib/hmac_sha1_min.js");
+var config = require("../config.js");
 
 var protocol = "https";
 var host = "oauth.withings.com";

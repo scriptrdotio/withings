@@ -4,9 +4,9 @@ write=nobody
 execute=authenticated 
   **/ 
 var http = require("http");
-var oauthManagerModule = require("./authorization/oauth");
-var config = require("./config");
-var mappings = require("./mappings")
+var oauthManagerModule = require("./authorization/oauth.js");
+var config = require("./config.js");
+var mappings = require("./mappings.js")
 
 /**
  * Simple client to invoke the Withings API.

@@ -45,7 +45,7 @@ notificationDesc[notificationTypes.SLEEP] = "Sleep";
  */
 var handlers = {};
   
- handlers[notificationTypes.WEIGHT] = "../notificationHandlers/DefaultHandler";
- handlers[notificationTypes.HEART_AND_BP] = "../notificationHandlers/DefaultHandler";
- handlers[notificationTypes.ACTIVITY] = "../notificationHandlers/DefaultHandler";
- handlers[notificationTypes.SLEEP] = "../notificationHandlers/DefaultHandler";			
+ handlers[notificationTypes.WEIGHT] = "../notificationHandlers/DefaultHandler.js";
+ handlers[notificationTypes.HEART_AND_BP] = "../notificationHandlers/DefaultHandler.js";
+ handlers[notificationTypes.ACTIVITY] = "../notificationHandlers/DefaultHandler.js";
+ handlers[notificationTypes.SLEEP] = "../notificationHandlers/DefaultHandler.js";			

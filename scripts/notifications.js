@@ -4,8 +4,8 @@ write=nobody
 execute=authenticated 
   **/ 
  
- var client = require("./withingsClient");
-var common = require("./common");
+ var client = require("./withingsClient.js");
+var common = require("./common.js");
 
 /**
  * This class allows you to subscribe to any type of notification, as made available by Withings.

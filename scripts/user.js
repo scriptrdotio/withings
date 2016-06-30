@@ -4,10 +4,10 @@ write=nobody
 execute=authenticated 
   **/ 
  
- var config = require("./config");
-var mappings = require("./mappings");
-var client = require("./withingsClient");
-var notifications = require("./notifications");
+ var config = require("./config.js");
+var mappings = require("./mappings.js");
+var client = require("./withingsClient.js");
+var notifications = require("./notifications.js");
 
 /**
  * This class provides methods that wrap the APIs exposed by Withings.

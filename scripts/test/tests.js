@@ -4,8 +4,8 @@ write=nobody
 execute=authenticated 
   **/ 
  
- var userClient = require("../user");
-var common = require("../common");
+ var userClient = require("../user.js");
+var common = require("../common.js");
 
 try {
   

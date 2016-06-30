@@ -56,7 +56,7 @@ Once this is done, withings automatically calls back the ```authorization/getAcc
 
 In order to use the connector, you need to import the main module: ```withings/user```, as described below:
 ```
-var userModule = require("/modules/withings/user");
+var userModule = require("/modules/withings/user.js");
 ```
 Then create a new instance of the User class, defined in this module (we assume that we already otbained an access token for the given user):
 ```
@@ -72,7 +72,7 @@ user.listActivities({from: "2015-07-21"});
 user.listSleepMeasures({from: new Date("2015-07-21"), to:new Date("2015-08-24")});
 
 // subscribe to notifications 
-var common = require("/modules/withings/common");
+var common = require("/modules/withings/common.js");
 var sub = {
   "notificationType": common.notificationTypes.WEIGHT
 };
