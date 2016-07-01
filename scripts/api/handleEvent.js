@@ -17,7 +17,7 @@ execute=authenticated
  * @param {String} userid: the identifier of the Withings end user
  */
 
-var common = require("../common");
+var common = require("../common.js");
 var notificationType = request.parameters.appli;
 
 // find an appropriat handler according to the predefined configuration
