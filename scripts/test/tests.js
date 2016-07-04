@@ -37,7 +37,7 @@ try {
   //results.mySubscription = notificationManager.getSubscription({notificationType: common.notificationTypes.WEIGHT});
   //results.subscriptions = notificationManager.listSubscriptions();
   //results.deleteSubscriptionStatus = notificationManager.deleteSubscription({notificationType: common.notificationTypes.WEIGHT});
-  //results.deleteSubscriptionStatusAgain = notificationManager.deleteSubscription({callbackUrl: "https://api.scriptr.io/carvoyant/api/handleEvent?auth_token=RzM1RkYwQzc4Mg==", notificationType:common.notificationTypes.WEIGHT});
+  //results.deleteSubscriptionStatusAgain = notificationManager.deleteSubscription({callbackUrl: "https://api.scriptrapps.io/modules/withings/api/handleEvent.js?auth_token=RzM1RkYwddsfMg==", notificationType:common.notificationTypes.WEIGHT});
   return results;
 }catch(exception){
   console.log("Error occurred");
