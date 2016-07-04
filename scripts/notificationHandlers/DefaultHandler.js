@@ -26,7 +26,7 @@ function handle(notification) {
     var user =  storage.global.withings[userid]
     var emailConfig = {
       
-      "to": user ? user.email : "karim.saikali@elementn.com", 
+      "to": user ? user.email : "YOUR_EMAIL", 
       "fromName": "Withings Handler",
       "subject": "Notification",
       "body": _formatMailBody(notification)
