@@ -15,7 +15,7 @@ var client_id = "231xef741c860ejd40kcb09b8b5e3981jl437e9984eb914e46e93f649c70ce"
 var client_secret = "e89v688dk9b24fbd39695h6403127756b454226417b8ccb5b625ef07593d1c"; // sample
 
 // the default callback URL to use in the OAuth process
-var redirect_uri = "https://api.scriptr.io/modules/withings/authorization/getAccessToken.js?auth_token=<YOUR_SCRIPTR_AUTH_TOKEN>";
+var redirect_uri = "https://api.scriptrapps.io/modules/withings/authorization/getAccessToken.js?auth_token=<YOUR_SCRIPTR_AUTH_TOKEN>";
 
 var host = "oauth.withings.com";
 var measuresHost = "wbsapi.withings.net";
