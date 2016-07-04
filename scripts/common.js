@@ -17,8 +17,8 @@ execute=authenticated
  */
 var notificationConfig = {
   
-  callback: "https://api.scriptr.io/withings/api/handleEvent",
-  authToken: "RzM1RkYwQzc4Mg=="
+  callback: "https://api.scriptrapps.io/modules/withings/api/handleEvent.js",
+  authToken: "<YOUR_SCRIPTR_AUTH_TOKEN>"
 }; 
 
 // Notification types constants, to be used in the connector's scripts instead of using the actual values
@@ -45,7 +45,7 @@ notificationDesc[notificationTypes.SLEEP] = "Sleep";
  */
 var handlers = {};
   
- handlers[notificationTypes.WEIGHT] = "../notificationHandlers/DefaultHandler.js";
- handlers[notificationTypes.HEART_AND_BP] = "../notificationHandlers/DefaultHandler.js";
- handlers[notificationTypes.ACTIVITY] = "../notificationHandlers/DefaultHandler.js";
- handlers[notificationTypes.SLEEP] = "../notificationHandlers/DefaultHandler.js";			
+ handlers[notificationTypes.WEIGHT] = "/modules/withings/notificationHandlers/DefaultHandler.js";
+ handlers[notificationTypes.HEART_AND_BP] = "/modules/withings/notificationHandlers/DefaultHandler.js";
+ handlers[notificationTypes.ACTIVITY] = "/modules/withings/notificationHandlers/DefaultHandler.js";
+ handlers[notificationTypes.SLEEP] = "/modules/withings/notificationHandlers/DefaultHandler.js";			
