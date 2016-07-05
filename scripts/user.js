@@ -287,13 +287,14 @@ User.prototype.listSPO2Measures = function(params) {
  * Only returns workout measures
  * @see listBodyMeasures for parameters and returned values
  * @method listWorkoutMeasures
- */
-User.prototype.listWorkoutMeasures = function(params) {
+ */ // Note - disabled as generating 503 error from Withings without clear reasons -
+/*User.prototype.listWorkoutMeasures = function(params) {
   
   var newParams = JSON.parse(JSON.stringify(params ? params : {}));
   newParams["action"] = "getworkouts"; 
   var results = this._invokeApi("v2/measure", newParams);
 };
+*/
 
  /**
   * This method can throw exceptions
