@@ -30,7 +30,6 @@ try {
   //results.sleepSummaryMeasures = user.listSleepSummaryMeasures({from: new Date("2015-07-21"), to:new Date("2015-08-24")});
   //results.sleepAverageSummaryMeasures = user.getAverageSleepSummaryMeasures({from: new Date("2015-07-21"), to:new Date("2015-08-24")});
   //results.spo2Measures = user.listSPO2Measures();
-  //results.listWorkoutMeasures = user.listWorkoutMeasures();
  
   //var notificationManager = user.getNotificationManager();
   //results.createSubscriptionStatus = notificationManager.subscribeToNotification({notificationType: common.notificationTypes.WEIGHT});
