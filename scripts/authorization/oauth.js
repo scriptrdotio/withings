@@ -4,7 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
- var cryptomd5 = require("../lib/md5_min.js");
+var cryptomd5 = require("../lib/md5_min.js");
 var encodingLib = require("../lib/enc_base64_min.js");
 var cryptohmacsha1 = require("../lib/hmac_sha1_min.js");
 var config = require("../config.js");
@@ -59,7 +59,7 @@ OAuthManager.prototype.signRequest = function(protocol , host, resource, paramet
   parameters["oauth_nonce"] = nonce;
   parameters["oauth_timestamp"] = this.generateOAuthTimestamp();
   parameters["oauth_signature_method"] = "HMAC-SHA1";
-  parameters["oauth_version"] = "1.0";
+  
   var baseString = this.generateOAuthBaseString(protocol, host, resource, parameters);
   var hmac = cryptohmacsha1.CryptoJS.HmacSHA1(baseString, oAuthSecret);
   var crypted = encodeURIComponent(hmac.toString(encodingLib.Base64));
