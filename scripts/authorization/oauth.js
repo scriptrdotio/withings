@@ -190,7 +190,7 @@ OAuthManager.prototype.loadOAuthCredentials = function(userId) {
         return storage.global.withings[userId];
     }else {
 
-        var resp = documet.get(_getDocumentKey(userid));
+        var resp = document.get(_getDocumentKey(userId));
         if (resp.metadata.status == "failure") {        
 
             log.error("OAuthManager.loadOAuthCredentials:\n" + JSON.stringify(resp));
