@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+
 const TYPE = "healthapi";
 const SOURCE = "withings";
 var useLegacyStorage = false; // set to true if you need to keep backward compatibility with former versions 
@@ -64,6 +65,7 @@ OAuthManager.prototype.signRequest = function(protocol , host, resource, paramet
     parameters["oauth_nonce"] = nonce;
     parameters["oauth_timestamp"] = this.generateOAuthTimestamp();
     parameters["oauth_signature_method"] = "HMAC-SHA1";
+    parameters["oauth_version"] = "1.0";
 
     var baseString = this.generateOAuthBaseString(protocol, host, resource, parameters);
     var hmac = cryptohmacsha1.CryptoJS.HmacSHA1(baseString, oAuthSecret);
